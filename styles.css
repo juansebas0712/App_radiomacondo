@@ -50,6 +50,44 @@ body, .ui-content{
 .ui-navbar li .ui-btn-active{
 	background: url("images/active.png") no-repeat bottom center #0b0b0b;
 }
+.img_menu, .img_player{
+	background: url('images/sprite.png') no-repeat;
+	margin: 0 auto;
+	margin-bottom: 8px;
+}
+.img_player{
+	margin-bottom: 4px;
+}
+.img_menu.radio{
+	width: 52px;
+	height: 37px;
+	background-position: 0px -37px;
+}
+.img_menu.chat{
+	width: 40px;
+	height: 37px;
+	background-position: 0px 0px;
+}
+.img_menu.noticias{
+	width: 45px;
+	height: 37px;
+	background-position: 0px -74px;
+}
+.img_player.play{
+	width: 20px;
+	height: 28px;
+	background-position: 0px -167px;
+}
+.img_player.stop{
+	width: 27px;
+	height: 28px;
+	background-position: 0px -139px;
+}
+.img_player.pause{
+	width: 22px;
+	height: 28px;
+	background-position: 0px -111px;
+}
 .ui-footer .jp-controls{
 	margin: 0;
 	padding: 0;
@@ -94,6 +132,10 @@ body, .ui-content{
 .album{
 	text-align: center;
 	margin-bottom: 30px;
+}
+.album img{
+	-webkit-box-shadow:  0px 1px 5px 1px rgba(0, 0, 0, .3);    
+    box-shadow:  0px 1px 5px 1px rgba(0, 0, 0, .3);
 }
 .creditos{
 	text-align: center;
