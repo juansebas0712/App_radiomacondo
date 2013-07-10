@@ -1,14 +1,54 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html> 
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script type="text/javascript" src="jwplayer.js"></script>
-	<script type="text/javascript" src="jwplayer.html5.js"></script>
-	<script type="text/javascript" src="scripts.js"></script>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, width=device-width" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/cordova.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.mobile-1.3.1.min.css"/>
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<title>Aplic. Web de jQuery Mobile</title>
+</head> 
+<body> 
+	<div data-role="page" id="inicio">
+		<div data-role="header">
+			<div data-role="navbar">
+			    <ul>
+			        <li><a href="#" class="ui-btn-active"><div class="img_menu radio"><img src="images/radio.png"/></div>RADIO</a></li>
+			        <li><a href="#"><div class="img_menu chat"><img src="images/chat.png"/></div>CHAT</a></li>
+			        <li><a href="#"><div class="img_menu noticias"><img src="images/noticias.png"/></div>NOTICIAS</a></li>
+			    </ul>
+			</div><!-- /navbar -->
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+    		<div id="jp_container_1" class="jp-audio">
+	       		<div class="jp-type-single">
+	            	<div class="jp-gui jp-interface">
+	                	<ul class="jp-controls">
+		                    <li><a href="javascript:;" class="jp-play"><div class="img_player play"><img src="images/play.png"/></div>play</a></li>
+		                    <li><a href="javascript:;" class="jp-pause"><div class="img_player pause"><img src="images/pause.png"/></div>pause</a></li>
+		                    <li><a href="javascript:;" class="jp-stop"><div class="img_player stop"><img src="images/stop.png"/></div>stop</a></li>
+	               		</ul>
+	              		<div class="jp-volume-bar">
+	                   		<div class="jp-volume-bar-value"></div>
+	               		</div>
+	           		</div>
+	            	<div class="jp-no-solution">
+	              	  <span>Actualizaci?n requerida</span>
+	              	  Para escuchar la radio con este player, tienes que actualizar tu browser o tu <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+	           		</div>
+	       		</div>
+   			</div>
+		</div><!-- footer -->
+			
+	</div>
 
+<<<<<<< HEAD
     <!--Comentario hecho por john probando git gui -->
         
 
@@ -37,13 +77,16 @@
                 Para escuchar la radio con este player, tienes que actualizar tu browser o tu <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
             </div>
         </div>
+=======
+<script type="text/javascript">
+	var StreamOrigen = "http://listen.radionomy.com/abc-jazz";
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function (event) {
+			$(this).jPlayer("setMedia", {mp3:StreamOrigen+"/;stream/1"}).jPlayer("play");
+		}, swfPath: "js/", supplied: "mp3", wmode: "window"});
+	
+</script>
+>>>>>>> estilos header footer
 
-    </div>  
-    <!-- HASTA AQUI --></td>
-  </tr>
-  <tr>
-    <td width="94">&nbsp;</td>
-  </tr>
-</table>
 </body>
 </html>

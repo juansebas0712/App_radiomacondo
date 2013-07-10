@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('type/leaguegothic-regular-webfont.eot');
+    src: url('type/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/type/leaguegothic-regular-webfont.woff') format('woff'),
+         url('type/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('type/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'titilliumtext25l400_wt';
+    src: url('type/titilliumtext25l003-webfont.eot');
+    src: url('type/titilliumtext25l003-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/titilliumtext25l003-webfont.woff') format('woff'),
+         url('type/titilliumtext25l003-webfont.ttf') format('truetype'),
+         url('type/titilliumtext25l003-webfont.svg#titilliumtext25l400_wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: 'titilliumtext25l400_wt', arial, helvetica, sans-serif;
+	font-size: 14px;
+}
+.ui-navbar .ui-btn-text{
+	font-family: 'league_gothicregular', helvetica, sans-serif;
+	font-size: 22px;
+	color: #a50808;
+	font-weight: normal;
+	text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+.ui-btn-inner, .ui-header{
+	border: none;
+}
+.ui-navbar li a, .ui-footer{
+	background: #0b0b0b;
+	border: none;
+}
+.ui-navbar li .ui-btn-active{
+	background: url("images/active.png") no-repeat bottom center #0b0b0b;
+}
+.ui-footer .jp-controls{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.ui-footer .jp-controls li{
+	list-style-type: none;
+	display: inline-block;
+}
+.ui-footer .jp-controls li a{
+	font-family: 'league_gothicregular', helvetica, sans-serif;
+	font-size: 22px;
+	color: #a50808;
+	font-weight: normal;
+	text-shadow: 0 0 0 rgba(0,0,0,0);
+	text-transform: capitalize;
+	text-decoration: none;
+	display: block;
+	padding: 9px 18px;
+}
+.ui-footer .jp-controls li a:hover{
+	color: #a50808;
+}
