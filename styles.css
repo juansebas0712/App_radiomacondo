@@ -25,6 +25,10 @@
 body{
 	font-family: 'titilliumtext25l400_wt', arial, helvetica, sans-serif;
 	font-size: 14px;
+
+}
+.ui-body-c, .ui-overlay-c{
+	background: #e5e5e5;
 }
 .ui-navbar .ui-btn-text{
 	font-family: 'league_gothicregular', helvetica, sans-serif;
