@@ -18,7 +18,7 @@
 		<div data-role="header">
 			<div data-role="navbar">
 			    <ul>
-			        <li><a href="#" class="ui-btn-active"><div class="img_menu radio"><img src="images/radio.png"/></div>RADIO</a></li>
+			        <li><a href="#" class="ui-btn-active ui-state-persist"><div class="img_menu radio"><img src="images/radio.png"/></div>RADIO</a></li>
 			        <li><a href="#"><div class="img_menu chat"><img src="images/chat.png"/></div>CHAT</a></li>
 			        <li><a href="noticias.html"><div class="img_menu noticias"><img src="images/noticias.png"/></div>NOTICIAS</a></li>
 			    </ul>
@@ -47,15 +47,6 @@
 		</div><!-- footer -->
 			
 	</div>
-
-<script type="text/javascript">
-	var StreamOrigen = "http://listen.radionomy.com/abc-jazz";
-	$("#jquery_jplayer_1").jPlayer({
-		ready: function (event) {
-			$(this).jPlayer("setMedia", {mp3:StreamOrigen+"/;stream/1"}).jPlayer("play");
-		}, swfPath: "js/", supplied: "mp3", wmode: "window"});
-	
-</script>
 
 </body>
 </html>

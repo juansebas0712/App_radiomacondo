@@ -28,7 +28,7 @@ body{
 
 }
 .ui-body-c, .ui-overlay-c{
-	background: #e5e5e5;
+	background: url("images/logo.jpg") no-repeat center center #e5e5e5;
 }
 .ui-navbar .ui-btn-text{
 	font-family: 'league_gothicregular', helvetica, sans-serif;
