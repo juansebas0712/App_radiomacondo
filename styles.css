@@ -25,7 +25,9 @@
 body{
 	font-family: 'titilliumtext25l400_wt', arial, helvetica, sans-serif;
 	font-size: 14px;
-
+}
+.ui-mobile .ui-page-active{
+	overflow: hidden;
 }
 .ui-body-c, .ui-overlay-c{
 	background: url("images/logo.jpg") no-repeat center center #e5e5e5;
