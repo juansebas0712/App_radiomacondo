@@ -9,7 +9,7 @@ $(document).ready(function(){
 			navigator.splashscreen.show();
 
 			document.addEventListener("offline", function(){
-				document.getElemetById("error").innerHTML("No hay conexión a internet, Vuelva a intentarlo más tarde.")
+				document.getElementById("error").innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
 			}, false);	
 		}, false);
 });
