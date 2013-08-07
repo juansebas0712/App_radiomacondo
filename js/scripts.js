@@ -6,7 +6,6 @@ $(document).ready(function(){
 		}, swfPath: "js/", supplied: 'm4a, oga', wmode: "window"});
 
 		document.addEventListener("deviceready", function(){
-			navigator.splashscreen.show();
 			document.addEventListener("offline", function(){
 				//document.getElementById("error").innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
 				//alert("no hay internet");
