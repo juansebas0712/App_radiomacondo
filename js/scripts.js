@@ -1,4 +1,4 @@
-$(document).bind("mobileinit", function(){
+$(document).ready(function(){
 		var StreamOrigen = "http://199.217.118.9:7426/";
 		$("#jquery_jplayer_1").jPlayer({
 			ready: function (event) {
@@ -15,6 +15,5 @@ $(document).bind("mobileinit", function(){
 				//document.getElementById("error").innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
 				//alert("ya hay internet");
 			}, false);
-			$('a').bind ("vclick");
 		}, false);
 });
