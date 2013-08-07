@@ -9,7 +9,12 @@ $(document).ready(function(){
 			navigator.splashscreen.show();
 
 			document.addEventListener("offline", function(){
-				document.getElementById("error").innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
-			}, false);	
+				//document.getElementById("error").innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
+				alert("no hay internet");
+			}, false);
+			document.addEventListener("online", function(){
+				//document.getElementById("error").innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
+				alert("ya hay internet");
+			}, false);
 		}, false);
 });
