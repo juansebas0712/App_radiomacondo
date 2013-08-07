@@ -1,9 +1,15 @@
 $(document).ready(function(){
-		var StreamOrigen = "http://listen.radionomy.com/abc-jazz";
+		var StreamOrigen = "http://199.217.118.9:7426/";
 		$("#jquery_jplayer_1").jPlayer({
 			ready: function (event) {
-				$(this).jPlayer("setMedia", {mp3:StreamOrigen+"/;stream/1"}).jPlayer("play");
-			}, swfPath: "js/", supplied: "mp3", wmode: "window"});
+				$(this).jPlayer("setMedia", {m4a:StreamOrigen+"/;stream/1"}).jPlayer("play");
+			}, swfPath: "js/", supplied: 'm4a, oga', wmode: "window"});
+		document.addEventListener("deviceready", function(){
 
-		var current = $('.ui-navbar a').text();
+			navigator.splashscreen.show();
+
+			document.addEventListener("offline", function(){
+				document.getElemetById("error").innerHTML("No hay conexión a internet, Vuelva a intentarlo más tarde.")
+			}, false);	
+		}, false);
 });
