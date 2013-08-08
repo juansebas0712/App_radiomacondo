@@ -34,6 +34,8 @@ $(document).ready(function(){
 		//feed de noticias
 		$('#ticker1').rssfeed('http://radiomacondo.fm/feed/',{
 		    limit: 5,
+		    dateformat: 'date',
+		    linktarget: '_blank'
 		  });
 
 });
