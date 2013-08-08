@@ -18,7 +18,8 @@ $(document).ready(function(){
 			});*/
 		document.addEventListener("deviceready", function(){
 			document.addEventListener("offline", function(){
-				document.getElementById("error").style.display="block".innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
+				document.getElementById("error").style.display="block";
+				document.getElementById("error").innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
 			}, false);
 		}, false);
 
