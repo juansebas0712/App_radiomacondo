@@ -4,8 +4,6 @@ $(document).ready(function(){
 			ready: function (event) {
 				$(this).jPlayer("setMedia", {mp3:"http://listen.radionomy.com/abc-jazz"}).jPlayer("play");
 		}, swfPath: "js/", supplied: 'mp3', wmode: "window"});
-
-
 			/*$("#jquery_jplayer_1").jPlayer({
 				ready: function (event) {
 					$(this).jPlayer("setMedia", {
@@ -18,16 +16,9 @@ $(document).ready(function(){
 				smoothPlayBar: true,
 				keyEnabled: true
 			});*/
-
-
 		document.addEventListener("deviceready", function(){
 			document.addEventListener("offline", function(){
-				//document.getElementById("error").innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
-				//alert("no hay internet");
-			}, false);
-			document.addEventListener("online", function(){
-				//document.getElementById("error").innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
-				//alert("ya hay internet");
+				document.getElementById("error").style.display="block".innerHTML="No hay conexión a internet, Vuelva a intentarlo más tarde.";
 			}, false);
 		}, false);
 
