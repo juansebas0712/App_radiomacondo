@@ -1,9 +1,24 @@
 $(document).ready(function(){
-		var StreamOrigen = "http://199.217.118.9:7426/";
+		var StreamOrigen = "http://199.217.118.9:7426";
 		$("#jquery_jplayer_1").jPlayer({
 			ready: function (event) {
-				$(this).jPlayer("setMedia", {m4a:StreamOrigen+"/;stream/1"}).jPlayer("play");
-		}, swfPath: "js/", supplied: 'm4a, oga', wmode: "window"});
+				$(this).jPlayer("setMedia", {mp3:"http://listen.radionomy.com/abc-jazz"}).jPlayer("play");
+		}, swfPath: "js/", supplied: 'mp3', wmode: "window"});
+
+
+			/*$("#jquery_jplayer_1").jPlayer({
+				ready: function (event) {
+					$(this).jPlayer("setMedia", {
+						m4a:"http://199.217.118.9:7426/;stream/1",
+					});
+				},
+				swfPath: "js/",
+				supplied: "m4a",
+				wmode: "window",
+				smoothPlayBar: true,
+				keyEnabled: true
+			});*/
+
 
 		document.addEventListener("deviceready", function(){
 			document.addEventListener("offline", function(){
@@ -15,4 +30,10 @@ $(document).ready(function(){
 				//alert("ya hay internet");
 			}, false);
 		}, false);
+
+		//feed de noticias
+		$('#ticker1').rssfeed('http://radiomacondo.fm/feed/',{
+		    limit: 5,
+		  });
+
 });

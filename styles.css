@@ -26,6 +26,9 @@ body, .ui-content{
 	font-family: 'titilliumtext25l400_wt', arial, helvetica, sans-serif;
 	font-size: 14px;
 }
+.ui-content{
+	padding: 15px 0;
+}
 .ui-mobile .ui-page-active{
 	overflow: hidden;
 }
@@ -152,4 +155,32 @@ body, .ui-content{
 	padding: 5px;
 	text-align: center;
 	text-shadow: 0 0 0 rgba(255,255,255,0);
+}
+.rssHeader{
+	display: none;
+}
+.rssBody ul{
+	margin: 0;
+	padding: 0;
+}
+.rssBody li{
+	list-style-type: none;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 12px;
+	margin-bottom: 2px;
+}
+.rssBody .rssRow h4{
+	margin-bottom: 5px;
+}
+.rssBody .rssRow h4 a{
+	font-family: 'league_gothicregular', helvetica, sans-serif;
+	font-size: 25px;
+	color: #a50808;
+	font-weight: normal;
+	text-shadow: 0 0 0 rgba(255,255,255,0);
+	text-decoration: none;
+}
+.rssBody .rssRow p{
+	margin-bottom: 0;
+	margin-top: 5px;
 }
