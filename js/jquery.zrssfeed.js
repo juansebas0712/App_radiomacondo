@@ -184,7 +184,7 @@
 			
 			// Add feed row
 			if (options.linkredirect) feedLink = encodeURIComponent(feedLink);
-			rowArray[rowIndex]['html'] = '<'+ options.titletag +'><a rel="'+ feedLink +'" href="#" class="link" title="Mira esta noticia en Radiomacondo.fm">'+ entry.title +'</a></'+ options.titletag +'>'
+			rowArray[rowIndex]['html'] = '<'+ options.titletag +'><a onclick="window.open(' + "\'" + feedLink + "\'" + ", '_system', 'location=yes'" + ')" href="#" title="Mira esta noticia en Radiomacondo.fm">'+ entry.title +'</a></'+ options.titletag +'>'
 
 			if (options.date && pubDate) rowArray[rowIndex]['html'] += '<div>'+ pubDate +'</div>'
 			if (options.content) {
@@ -345,14 +345,5 @@
 		if (t > 1) u += 's';
 		return t + ' ' + u;
 	}
-	$('.link').click(function() {
-	    url = $(this).attr("rel");   
-	    loadURL(url);
-	});
-
-	function loadURL(url){
-	    navigator.app.loadUrl(url, { openExternal:true });
-	    return false;
-	} 
 
 })(jQuery);
