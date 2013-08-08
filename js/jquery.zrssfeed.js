@@ -345,7 +345,7 @@
 		if (t > 1) u += 's';
 		return t + ' ' + u;
 	}
-	$('.link').live('tap', function() {
+	$('.link').click(function() {
 	    url = $(this).attr("rel");   
 	    loadURL(url);
 	});
