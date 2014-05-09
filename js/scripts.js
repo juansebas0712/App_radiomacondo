@@ -1,21 +1,58 @@
 $(document).ready(function(){
-		var StreamOrigen = "http://199.217.118.9:7426";
-		$("#jquery_jplayer_1").jPlayer({
-			ready: function (event) {
-				$(this).jPlayer("setMedia", {mp3:"http://listen.radionomy.com/abc-jazz"}).jPlayer("play");
-		}, swfPath: "js/", supplied: 'mp3', wmode: "window"});
-			/*$("#jquery_jplayer_1").jPlayer({
-				ready: function (event) {
-					$(this).jPlayer("setMedia", {
-						m4a:"http://199.217.118.9:7426/;stream/1",
-					});
+		var StreamOrigen = "http://144.76.109.79:7998";
+
+		        $("#jquery_jplayer_1").jPlayer({
+
+		            ready: function (event) {
+
+		                $(this).jPlayer("setMedia", {
+
+		                    mp3:StreamOrigen+"/;stream/1"
+
+		                }).jPlayer("play");
+
+		            },
+
+		            swfPath: "/",
+
+		            supplied: "mp3",
+
+		            wmode: "window"
+
+		        });
+		       
+		       
+		     /*  var stream = {
+					title: "Radiomacondo",
+					mp3: "http://listen.radionomy.com/abc-jazz"
 				},
-				swfPath: "js/",
-				supplied: "m4a",
-				wmode: "window",
-				smoothPlayBar: true,
-				keyEnabled: true
-			});*/
+				ready = false;
+			
+				$("#jquery_jplayer_1").jPlayer({
+					ready: function (event) {
+						ready = true;
+						$(this).jPlayer("setMedia", stream);
+					},
+					pause: function() {
+						$(this).jPlayer("clearMedia");
+					},
+					error: function(event) {
+						if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
+							// Setup the media stream again and play it.
+							$(this).jPlayer("setMedia", stream).jPlayer("play");
+						}
+					},
+					swfPath: "/",
+					supplied: "mp3",
+					preload: "none",
+					wmode: "window",
+					keyEnabled: true
+				});*/
+
+
+		
+
+			
 		document.addEventListener("deviceready", function(){
 			document.addEventListener("offline", function(){
 				document.getElementById("error").style.display="block";
